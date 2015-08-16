@@ -1,0 +1,5 @@
+Constraints
+===========
+You can wire up constraints in XCode by holding Ctrl and dragging from a UI element to the background drawing.
+
+If you begin to update constraints in a
