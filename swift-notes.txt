@@ -1,5 +1,36 @@
+
+
+Swift Method syntax
+===================
+Swift methods look like this: 
+
+func appendDigit(sender: UIButton) -> Double {
+	// append a digit
+}
+
+The "-> Double" is the return type of the function.
+
+
+Connecting Storyboards to ViewControllers
+=========================================
+... works exactly the same as it did before. You Ctrl+drag the View from the storyboard into the ViewController's .swift file.
+
+@IBOutlets are properties (instance variables), @IBActions are methods.
+
+Constraint Misplacements
+========================
+There are three ways to fix a mixplacement:
+
+1.) "Update Frame": this basically says "take into consideration all the rules, and move this label to where the rules say it should be." This is the preferred option.
+2.) "Update Constraints": this is basically the "force constraints" button. This will force some meaningless constraint onto the view. You almost never want this option..
+3.) "Reset Constraints": this one basically means "match the blue lines". This will probably work.
+
+
 Constraints
 ===========
 You can wire up constraints in XCode by holding Ctrl and dragging from a UI element to the background drawing.
 
-If you begin to update constraints in a
+If you begin to update constraints on a view in the storyboard, the horizontal and vertical lines will turn yellow for each of the "invalid" constraints that you have. To fix this, you have two options. Either:
+1.) wire them up visually with a Ctrl-drag, or
+2.) open the Document Outline button in the bottom and fix the issues on that view from there. There should be a yellow "issues" button in the top right of the Document Outline. You can fix misplacements by clicking the yellow "warning" icons in the misplacement.
+
